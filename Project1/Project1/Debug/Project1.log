@@ -1,0 +1,6 @@
+﻿  String.cpp
+  Vector3.cpp
+c:\users\kamax\onedrive\escritorio\roger\master\c++\exercises\exercise1mvj\project1\project1\vector3.cpp(5): error C2955: 'Vector3': use of class template requires template argument list
+c:\users\kamax\onedrive\escritorio\roger\master\c++\exercises\exercise1mvj\project1\project1\vector3.cpp(6): error C2509: '{ctor}': member function not declared in 'Vector3'
+c:\users\kamax\onedrive\escritorio\roger\master\c++\exercises\exercise1mvj\project1\project1\vector3.cpp(10): error C2955: 'Vector3': use of class template requires template argument list
+c:\users\kamax\onedrive\escritorio\roger\master\c++\exercises\exercise1mvj\project1\project1\vector3.cpp(11): error C2509: '{dtor}': member function not declared in 'Vector3'
