@@ -65,5 +65,5 @@ Vector3<T> Vector3<T>::operator+(Vector3<T> a)
 template<class T>
 Vector3<T> Vector3<T>::operator=(Vector3<T> a)
 {
-	return Vector3<T> (a.x, a.y.a.z);
+	return Vector3<T> (a.x, a.y, a.z);
 }

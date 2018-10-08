@@ -1,4 +1,4 @@
-﻿  Vector3.cpp
-  main.cpp
-  Generating Code...
-  Project1.vcxproj -> C:\Users\kamax\OneDrive\Escritorio\Roger\Master\c++\exercises\Exercise1MVJ\Project1\Debug\Project1.exe
+﻿  main.cpp
+main.obj : error LNK2019: unresolved external symbol "public: class Vector3<int> __thiscall Vector3<int>::operator+(class Vector3<int>)" (??H?$Vector3@H@@QAE?AV0@V0@@Z) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "public: class Vector3<int> __thiscall Vector3<int>::operator=(class Vector3<int>)" (??4?$Vector3@H@@QAE?AV0@V0@@Z) referenced in function _main
+C:\Users\kamax\OneDrive\Escritorio\Roger\Master\c++\exercises\Exercise1MVJ\Project1\Debug\Project1.exe : fatal error LNK1120: 2 unresolved externals
