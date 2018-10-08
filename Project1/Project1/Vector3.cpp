@@ -1,7 +1,7 @@
 #include "Vector3.h"
 #include <math.h>
 
-
+/*
 template <class T>
 Vector3<T>::Vector3()
 {
@@ -9,6 +9,7 @@ Vector3<T>::Vector3()
 	y = 0;
 	z = 0;
 }
+
 template <class T>
 Vector3<T>::Vector3(const Vector3 &original):
 	x(original.x),
@@ -16,20 +17,20 @@ Vector3<T>::Vector3(const Vector3 &original):
 	z(original.z)
 {
 }
+
 template <class T>
 Vector3<T>::Vector3(T x, T y, T z):
 	x(x),
 	y(y),
 	z(z)
 {
-
 }
 
 template <class T>
 Vector3<T>::~Vector3()
 {
 }
-
+*/
 template<class T>
 void Vector3<T>::normalize()
 {
@@ -62,10 +63,7 @@ Vector3<T> Vector3<T>::operator+(Vector3<T> a)
 }
 
 template<class T>
-void Vector3<T>::operator=(Vector3<T> a)
+Vector3<T> Vector3<T>::operator=(Vector3<T> a)
 {
-	//https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm
-	x = a.x;
-	y = a.y;
-	z = a.z;
+	return Vector3<T> (a.x, a.y.a.z);
 }
