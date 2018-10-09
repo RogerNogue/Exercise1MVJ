@@ -23,9 +23,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Vector3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="String.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

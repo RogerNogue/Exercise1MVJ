@@ -2,17 +2,26 @@
 #include <iostream>
 
 void String::copy(const char* str, int siz) {
-	bool fromClass = siz >= 0;
-	start = new char;
+
+	if (siz == -1) {
+		int i;
+		const char* j = str;
+		siz = 0;
+		for (i = 0; *(j + i) != 0; ++i) {
+			++siz;
+		}
+	}
+	start = new char(siz);
 	size = 0;
-	const char* i = str; //the contents of str will mot be modified
+	const char* i = str;
 	char* iterator = start;
-	while ((!fromClass && *i != 0) || (fromClass && size < siz)) {
+	while (size < siz) {
 		*iterator = *i;
 		++iterator;
 		++i;
 		++size;
 	}
+
 }
 
 void String::printString() {
@@ -31,6 +40,7 @@ String::String(const String *s){
 }
 
 String::~String(){
+	delete start;
 }
 
 int String::length() {
@@ -39,6 +49,7 @@ int String::length() {
 
 void String::clear() {
 	size = 0;
+	delete start;
 }
 
 String String::operator=(String a){
@@ -67,7 +78,7 @@ bool String::operator==(const char* a) {
 }
 
 String concat(const String a, const String b) {
-	char* concatenation = new char;
+	char* concatenation = new char(a.size + b.size);
 	for (int i = 0; i < a.size; ++i) {
 		*(concatenation + i) = *(a.start + i);
 	}

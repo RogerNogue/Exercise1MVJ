@@ -7,23 +7,32 @@ using namespace std;
 int main() {
 	//<>
 	//vector3 operations
-	Vector3<int> vec(1, 2, 3);
-	Vector3<int> vec2(3, 2, 1);
-	Vector3<int> vec3;
+	/*
+	Vector3<float> vec(2., 2., 3.);
+	Vector3<float> vec2(3., 2., 1.);
+	Vector3<float> vec3;
 	vec3 = vec + vec2;
-	//cout << vec3.x << vec3.y << vec3.z << endl;
-	
+	//vec3.normalize();
+	cout << "distance to 5, 5, 5 = " << vec3.distance_to(Vector3<float>(5, 5, 5)) << endl;
+	vec3.printVector();
+	*/
 
 	//string operations
-	/*
+	
 	String s("hola");
+	s.printString();
 	String a("hola");
-	//String b = s + a;
+	String b = s + a;
 	s.printString();
 	a.printString();
-	//b.printString();
-
+	b.printString();
+	/*
+	s.~String();
+	a.~String();
+	b.~String();
 	*/
+
+	
 
 	while(1){}
 }
