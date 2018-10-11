@@ -11,7 +11,7 @@ void String::copy(const char* str, int siz) {
 			++siz;
 		}
 	}
-	start = new char(siz);
+	start = new char[siz];
 	size = 0;
 	const char* i = str;
 	char* iterator = start;
@@ -41,7 +41,7 @@ String::String(const String *s){
 
 String::~String(){
 	size = 0;
-	delete start;
+	delete[] start;
 }
 
 int String::length() {
@@ -50,7 +50,7 @@ int String::length() {
 
 void String::clear() {
 	size = 0;
-	delete start;
+	delete[] start;
 }
 
 String String::operator=(String a){
@@ -79,7 +79,7 @@ bool String::operator==(const char* a) {
 }
 
 String concat(const String a, const String b) {
-	char* concatenation = new char(a.size + b.size);
+	char* concatenation = new char[a.size + b.size];
 	for (int i = 0; i < a.size; ++i) {
 		*(concatenation + i) = *(a.start + i);
 	}
