@@ -40,6 +40,7 @@ String::String(const String *s){
 }
 
 String::~String(){
+	size = 0;
 	delete start;
 }
 
