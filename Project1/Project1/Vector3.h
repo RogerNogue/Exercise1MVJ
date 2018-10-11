@@ -47,18 +47,8 @@ public:
 
 	//operator override
 	Vector3<T> operator+(Vector3<T> a) {
-		//https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm
-		
 		 Vector3<T> Result(x + a.x, y + a.y, z + a.z);
-		 //std::cout << "sum, result = " << Result.x << ", " << Result, y << ", " << Result.z << std::endl;
 		 return Result;
-		
-		/*
-		Result.x = this.x + a.x;
-		Result.y = this.y + a.y;
-		Result.z = this.z + a.z;
-		return Result;
-		*/
 	}
 	Vector3<T> operator=(Vector3<T> a) {
 		x = a.x; y = a.y; z = a.z;
